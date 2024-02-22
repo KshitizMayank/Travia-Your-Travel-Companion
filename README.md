@@ -1,3 +1,12 @@
+Travia - Your Travel Companion is a website for travel enthusisasts or anybody who is planning to travel across the Incredible India.
+
+
+
+
+
+
+
+
 How to run the the file to see the output in the browser
 
 <!-- Description of the files -->
