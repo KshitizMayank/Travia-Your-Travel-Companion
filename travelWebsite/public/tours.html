@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" class="rel">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" class="rel">
+</head>
+<body>
+   
+    <!-- header section starts -->
+
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">Travia.</a>
+
+            <nav class="navbar">
+                <!-- <a href="index.html">Home</a> -->
+                <a href="about.html">About</a>
+                <a href="tours.html">Tours</a>
+                <!-- <a href="destinations.html">Destination</a> -->
+                <a href="contact.html">Contact</a>
+            </nav>
+
+
+            <div id="menu-btn" class="fas fa-bars">
+
+            </div>
+        </section>
+    </header>
+    <!-- header section ends -->
+
+
+    <!-- tour section start -->
+
+    <div class="container tours">
+
+        <section class="grid">
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/taj.jpg" alt="">
+                <!-- <div class="price">
+                    <i class="fas fa-dollar-sign"></i><span>1299</span>
+                </div> -->
+                <h3 class='name'>Taj Mahal</h3>
+                <p class='address' id="Agra">Agra, India</p>
+                <button class="btn" onclick="openPopup1()">Show Info</button>
+                <div class="popup" id="popup1">
+                    <p id="AgraEstd">Estd.- 12/2/1612</p>
+                    <p id="AgraFee">Entry fee: 300</p>
+                    <p id="AgraCity">State: Agra</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btnX" onclick="closePopup1()">&#10006</button>
+                </div>
+                
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="images\kedarnath.jpg" alt="">
+                
+                <h3 class='name'>KedarNath</h3>
+                <p class='address' id="Uttrakhand">Uttrakhand, India</p>
+                <button class="btn" onclick="openPopup2()">Show Info</button>
+                <div class="popup" id="popup2">
+                    <p id="UttrakhandEstd">Estd.- ddmmyyyy</p>
+                    <p id="UttrakhandFee">Entry fee: 300</p>
+                    <p id="UttrakhandCity">State: Abcd</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btnX" onclick="closePopup2()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="images\nalanda.jpg" alt="">
+                
+                <h3 class='name'>Nalanda University</h3>
+                <p class='address' id="Patna">Patna, India</p>
+                <button class="btn" onclick="openPopup3()">Show Info</button>
+                <div class="popup" id="popup3">
+                    <p id="PatnaEstd">Estd.- ddmmyyyy</p>
+                    <p id="PatnaFee">Entry fee: 300</p>
+                    <p id="PatnaCity">State: Abcd</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btnX" onclick="closePopup3()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="200">
+                
+                <img src="images\hawamahal.jpg" alt="">
+               
+                <h3 class='name'>Hawa Mahal</h3>
+                <p class='address' id="Hyderabadh">Hyderabadh, India</p>
+                <button class="btn" type="button" onclick="openPopup4()">Show Info</button>
+                <div class="popup" id="popup4">
+                    <p id="HyderabadhEstd">Estd.- ddmmyyyy</p>
+                    <p id="HyderabadhFee">Entry fee: 300</p>
+                    <p id="HyderabadhCity">State: Abcd</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btnX" onclick="closePopup4()">&#10006</button>
+    
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="200">
+                
+                <img src="images\charminar.jpg" alt="">
+                
+                <h3 class='name'>Charminar</h3>
+                <p class='address' id="Jaipur">Jaipur, India</p>
+                <button class="btn" onclick="openPopup5()">Show Info</button>
+                <div class="popup" id="popup5">
+                    <p id="JaipurEstd">Estd.- ddmmyyyy</p>
+                    <p id="JaipurFee">Entry fee: 300</p>
+                    <p id="JaipurCity">State: Abcd</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btnX" onclick="closePopup5()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="200">
+                
+                <img src="images\bodh.jpg" alt="">
+                
+                <h3 class='name'>Bodh Gaya</h3>
+                <p class='address' id="Gaya1">Gaya, India</p>
+                <button class="btn" onclick="openPopup6()">Show Info</button>
+                <div class="popup" id="popup6">
+                    <p id="GayaEstd">Estd.- ddmmyyyy</p>
+                    <p id="GayaFee">Entry fee: 300</p>
+                    <p id="GayaCity">State: Abcd</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btnX" onclick="closePopup6()">&#10006</button>
+                </div>
+            </div>
+            
+
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+            
+                <img src="./images/Amber palace.jpeg" alt="1">
+                <!-- <div class="price">
+                    <i class="fas fa-dollar-sign"></i><span>1299</span>
+                </div> -->
+                <h3 class='name'>Amber Palace</h3>
+                <!-- <p class='address' id="Agra">, India</p> -->
+                <button class="btn" onclick="openPopup11()">Show Info</button>
+                <div class="popup" id="popup11">
+                    <p id="rajEstd">Estd.- 12-03-1239</p>
+                    <p id="rajfee">Entry fee: 50</p>
+                    <p id="rajstate">State: Rajasthan</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup11()">&#10006</button>
+                </div>
+                
+            </div>
+
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+            
+                <img src="./images/DalLake.jpeg " alt="2">
+                
+                <h3 class='name'>Baga Beach</h3>
+                <!-- <p class='address' id="Uttrakhand">Uttrakhand, India</p> -->
+                <button class="btn" onclick="openPopup12()">Show Info</button>
+                <div class="popup" id="popup12">
+                    <p id="goaEstd">Estd.- NA</p>
+                    <p id="goafee">Entry fee: NA</p>
+                    <p id="goastate">State: Goa</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup12()">&#10006</button>
+                </div>
+            </div>
+          
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="images\charminar.jpg" alt="4">
+               
+                <h3 class='name'>Charminar</h3>
+                <!-- <p class='address' id="Hyderabadh">Hyderabad, India</p> -->
+                <button class="btn" type="button" onclick="openPopup14()">Show Info</button>
+                <div class="popup" id="popup14">
+                    <p id="hydEstd">Estd.- NA</p>
+                    <p id="hydfee">Entry fee: 200</p>
+                    <p id="hydstate">State: Hyderabad</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup14()">&#10006</button>
+    
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/DalLake.jpeg" alt="5">
+                
+                <h3 class='name'>Dal Lake</h3>
+                <!-- <p class='address' id="Jaipur">Jaipur, India</p> -->
+                <button class="btn" onclick="openPopup15()">Show Info</button>
+                <div class="popup" id="popup15">
+                    <p id="j&kEstd">Estd.- NA</p>
+                    <p id="j&kfee">Entry fee: NA</p>
+                    <p id="j&kstate">State: Jammu and Kashmir</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup15()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/goldentemple.jpeg" alt="6">
+                
+                <h3 class='name'>Golden Temple</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup16()">Show Info</button>
+                <div class="popup" id="popup16">
+                    <p id="punjabEstd">Estd.- NA</p>
+                    <p id="punjabfee">Entry fee: NA</p>
+                    <p id="punjabstate">State: Punjab</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup16()">&#10006</button>
+                </div>
+            </div>
+    
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="images\hawamahal.jpg" alt="7">
+                
+                <h3 class='name'>Hawa Mahal</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup17()">Show Info</button>
+                <div class="popup" id="popup17">
+                    <p id="rajEstd2">Estd.- 02-04-1928</p>
+                    <p id="rajfee2">Entry fee: NA</p>
+                    <p id="rajstate2">State: Rajasthan </p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup17()">&#10006</button>
+                </div>
+            </div>
+            
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/indiagate.jpeg" alt="8">
+                
+                <h3 class='name'>India Gate</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup18()">Show Info</button>
+                <div class="popup" id="popup18">
+                    <p id="delhiEstd">Estd.- NA</p>
+                    <p id="delhifee">Entry fee: NA</p>
+                    <p id="delhistate">State: New Delhi</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup18()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/jantarmantar.jpeg" alt="9">
+                
+                <h3 class='name'>Jantar Mantar</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup19()">Show Info</button>
+                <div class="popup" id="popup19">
+                    <p id="delhiEstd2">Estd.- 01-01-1563</p>
+                    <p id="delhifee2">Entry fee: 250</p>
+                    <p id="delhistate2">State: New Delhi</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup19()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="images\kedarnath.jpg" alt="10">
+                
+                <h3 class='name'>Kedarnath</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup20()">Show Info</button>
+                <div class="popup" id="popup20">
+                    <p id="ukEstd">Estd.- NA</p>
+                    <p id="ukfee">Entry fee: NA</p>
+                    <p id="ukstate">State: Uttrakhand</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup20()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/Lakepalace.webp" alt="11">
+                
+                <h3 class='name'>Lake Palace</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup21()">Show Info</button>
+                <div class="popup" id="popup21">
+                    <p id="rajEstd3">Estd.- NA</p>
+                    <p id="rajfee3">Entry fee: NA</p>
+                    <p id="rajstate3">State: Rajasthan</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup21()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/lotustemple.jpeg" alt="12">
+                
+                <h3 class='name'>Lotus Temple</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup22()">Show Info</button>
+                <div class="popup" id="popup22">
+                    <p id="delhiEstd3">Estd.- 12-06-1934</p>
+                    <p id="delhifee3">Entry fee: NA</p>
+                    <p id="delhistate3">State: New Delhi</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup22()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/mysorepalace.jpeg" alt="13">
+                
+                <h3 class='name'>Mysore Palace</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup23()">Show Info</button>
+                <div class="popup" id="popup23">
+                    <p id="karEstd">Estd.- 04-03-1729</p>
+                    <p id="karfee">Entry fee: 100</p>
+                    <p id="karstate">State: Karnataka</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup23()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/Nanital.jpeg" alt="14">
+                
+                <h3 class='name'>Nainital</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup24()">Show Info</button>
+                <div class="popup" id="popup24">
+                    <p id="ukEstd2">Estd.- NA</p>
+                    <p id="ukfee2">Entry fee: NA</p>
+                    <p id="ukstate2">State: Uttrakhand</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup24()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/nalanda.jpg" alt="15">
+                
+                <h3 class='name'>Nalanda University</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup25()">Show Info</button>
+                <div class="popup" id="popup25">
+                    <p id="biharEstd2">Estd.- NA</p>
+                    <p id="biharfee2">Entry fee: NA</p>
+                    <p id="biharstate2">State: Bihar</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup25()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/Ooty.jpeg" alt="16">
+                
+                <h3 class='name'>Ooty</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup26()">Show Info</button>
+                <div class="popup" id="popup26">
+                    <p id="tnEstd">Estd.- NA</p>
+                    <p id="tnfee">Entry fee: NA</p>
+                    <p id="tnstate">State: Tamil Nadu</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup26()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/QutubMinar.jpeg" alt="17">
+                
+                <h3 class='name'>Qutub Minar</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup27()">Show Info</button>
+                <div class="popup" id="popup27">
+                    <p id="delhiEstd4">Estd.- 08-02-1459</p>
+                    <p id="delhifee4">Entry fee: NA</p>
+                    <p id="delhistate4">State: New Delhi</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup27()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/redfort.jpeg" alt="18">
+                
+                <h3 class='name'>Red Fort</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup28()">Show Info</button>
+                <div class="popup" id="popup28">
+                    <p id="delhiEstd5">Estd.- 01-10-1945</p>
+                    <p id="delhifee5">Entry fee: NA</p>
+                    <p id="delhistate5">State: New Delhi</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup28()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/taj.jpg" alt="19">
+                
+                <h3 class='name'>Taj Mahal</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup29()">Show Info</button>
+                <div class="popup" id="popup29">
+                    <p id="upEstd">Estd.- 10-03-1593</p>
+                    <p id="upfee">Entry fee: 200</p>
+                    <p id="upstate">State: Uttar Pradesh</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup29()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/victoriamueseum.jpeg" alt="20">
+                
+                <h3 class='name'>Victoria Memorial</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup30()">Show Info</button>
+                <div class="popup" id="popup30">
+                    <p id="wbEstd">Estd.- 12-04-1858</p>
+                    <p id="wbfee">Entry fee: 200</p>
+                    <p id="wbstate">State: West Bengal </p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup30()">&#10006</button>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in-up" data-delay="100">
+                
+                <img src="./images/Wayanad.jpeg" alt="21">
+                
+                <h3 class='name'>Wayanad</h3>
+                <!-- <p class='address' id="Gaya">Gaya, India</p> -->
+                <button class="btn" onclick="openPopup31()">Show Info</button>
+                <div class="popup" id="popup31">
+                    <p id="kerelaEstd">Estd.- NA</p>
+                    <p id="kerelafee">Entry fee: NA</p>
+                    <p id="kerelastate">State: Kerela</p>
+                    <!-- <p>City: abcd</p> -->
+                    <button class="btn" onclick="closePopup31()">&#10006</button>
+                </div>
+            </div>
+            
+           
+        </section>
+    </div>
+    
+
+
+    <!-- tour section ends -->
+
+
+    
+    <!-- Footer section starts -->
+
+    <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-photo">
+            <img src="images/Max.png" alt="Footer Photo">
+          </div>
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>We pride ourselves on offering comprehensive destination insights and authentic traveler reviews, ensuring you make informed decisions for your next adventure.</p>
+          </div>
+          <div class="footer-section">
+            <h4 class="explore">Explore</h4>
+            <ul>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Book Now</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>123 Travel Street,<br>Cityville, Country</p>
+            <p>Email: info@example.com<br>Phone: +123456789</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+
+    <!-- Footer section ends -->
+
+
+    
+    <!-- custom js file link -->
+    <!-- <script src="script.js"></script>
+    <script>
+        function showInfo(placeName) {
+            // Send AJAX request to fetch data from server
+            fetch('/tourist-places')
+                .then(response => response.json())
+                .then(data => {
+                    // Find the data for the selected place
+                    const placeData = data.find(place => place.place_name === placeName);
+                    // Display the information in a popup (You can use any method to display the data)
+                    alert(`Place Name: ${placeData.place_name}\nEntry Fees: ${placeData.entry_fees}\nLocation: ${placeData.location}\nEstablished Date: ${placeData.established_date}`);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+    </script> -->
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+     <!-- custom js file link -->
+    <script src="./js/script.js">
+    </script>
+    <!-- <script>
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+    
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script> -->
+</body>
+</html>
